@@ -1,0 +1,2 @@
+ALTER TABLE produtos
+ADD COLUMN preco INT NOT NULL;

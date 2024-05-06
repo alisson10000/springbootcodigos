@@ -3,10 +3,12 @@ import com.spring.aulaOito.dto.UsuarioDTO;
 import com.spring.aulaOito.model.Usuario;
 import com.spring.aulaOito.repository.UsuarioRepository;
 import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import java.util.Optional;
 @Service
 public class UsuarioService {
+	@Qualifier("modelMapper")
 	private final ModelMapper modelMapper;
 	private final UsuarioRepository usuarioRepository;
 
